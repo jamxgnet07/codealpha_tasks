@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Data Redundancy Removal System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Final Data Redundancy Removal System</h1>
+      <p>Admin-controlled validation and storage of only unique verified records.</p>
+    </header>
+
+    <section class="login-section" id="loginSection">
+      <div class="login-card">
+        <h2>Admin Login</h2>
+        <form id="loginForm">
+          <input type="text" id="adminUser" placeholder="Admin username" required />
+          <input type="password" id="adminPass" placeholder="Admin password" required />
+          <button type="submit">Login</button>
+        </form>
+        <p id="loginMsg"></p>
+      </div>
+    </section>
+
+    <section id="adminPanel" class="hidden">
+      <section class="dashboard">
+        <div class="dash-card">
+          <h3>Total Records</h3>
+          <p id="totalRecords">0</p>
+        </div>
+        <div class="dash-card">
+          <h3>Verified Unique</h3>
+          <p id="verifiedRecords">0</p>
+        </div>
+      </section>
+
+      <section class="main-grid">
+        <div class="form-card">
+          <h2>Add Record</h2>
+          <form id="recordForm">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="email" id="email" placeholder="Email Address" required />
+            <input type="text" id="phone" placeholder="10-digit Phone Number" required />
+            <input type="text" id="department" placeholder="Department" required />
+            <button type="submit">Validate and Store</button>
+          </form>
+
+          <div id="resultBox" class="result-box">
+            <p>Validation output will appear here.</p>
+          </div>
+        </div>
+
+        <div class="records-panel">
+          <div class="records-tools">
+            <input type="text" id="searchInput" placeholder="Search records..." />
+            <select id="statusFilter">
+              <option value="">All Status</option>
+              <option value="Verified Unique">Verified Unique</option>
+            </select>
+            <button id="searchBtn">Search</button>
+            <button id="exportBtn">Export CSV</button>
+          </div>
+
+          <div id="recordsList" class="records-list">
+            <p>No records loaded yet.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

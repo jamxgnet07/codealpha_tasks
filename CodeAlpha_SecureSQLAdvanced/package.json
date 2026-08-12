@@ -1,0 +1,20 @@
+{
+  "name": "secure-sql-advanced",
+  "version": "1.0.0",
+  "description": "Advanced cloud system securing user data against SQL injection with AES-256, JWT, roles, and security logs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "Noorul Jameel",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7"
+  }
+}

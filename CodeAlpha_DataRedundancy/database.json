@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1ab978af-15e8-4540-b673-454f2dfbaed7",
+    "name": "jameel",
+    "email": "hjtech7@gmail.com",
+    "phone": "9988776655",
+    "department": "post",
+    "status": "Verified Unique",
+    "createdAt": "2026-07-26T10:06:23.299Z"
+  },
+  {
+    "id": "0d143270-3e86-443f-a429-b4fdda46e495",
+    "name": "jasim",
+    "email": "jasim12@gmail.com",
+    "phone": "1122334455",
+    "department": "car",
+    "status": "Verified Unique",
+    "createdAt": "2026-07-26T10:06:57.866Z"
+  }
+]

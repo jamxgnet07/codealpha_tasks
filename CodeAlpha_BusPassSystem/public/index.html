@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Bus Pass System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Cloud-Based Bus Pass System</h1>
+      <p>Book secure digital bus tickets and passes with instant confirmation.</p>
+    </header>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>Cloud Booking</h3>
+        <p>Tickets are stored digitally to prevent ticket loss and theft.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Correct Pricing</h3>
+        <p>Automated fare calculation prevents manual pricing mistakes.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Reliable Access</h3>
+        <p>Designed for scalable booking with centralized online storage.</p>
+      </div>
+    </section>
+
+    <section class="booking-section">
+      <div class="form-card">
+        <h2>Book Your Ticket / Pass</h2>
+        <form id="bookingForm">
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <input type="email" id="email" placeholder="Enter your email" required />
+
+          <select id="from" required>
+            <option value="">Select Source</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Tambaram">Tambaram</option>
+            <option value="Chengalpattu">Chengalpattu</option>
+            <option value="Kanchipuram">Kanchipuram</option>
+          </select>
+
+          <select id="to" required>
+            <option value="">Select Destination</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Tambaram">Tambaram</option>
+            <option value="Chengalpattu">Chengalpattu</option>
+            <option value="Kanchipuram">Kanchipuram</option>
+          </select>
+
+          <input type="number" id="passengers" min="1" placeholder="Number of passengers" required />
+
+          <select id="passType" required>
+            <option value="">Select Pass Type</option>
+            <option value="Single Ticket">Single Ticket</option>
+            <option value="Daily Pass">Daily Pass</option>
+            <option value="Weekly Pass">Weekly Pass</option>
+            <option value="Monthly Pass">Monthly Pass</option>
+          </select>
+
+          <input type="date" id="journeyDate" required />
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+
+      <div class="result-card">
+        <h2>Booking Result</h2>
+        <div id="result">
+          <p>Your booking details will appear here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-list-section">
+      <h2>Recent Bookings</h2>
+      <button id="loadBookings">Load Bookings</button>
+      <div id="bookingsList" class="bookings-list"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

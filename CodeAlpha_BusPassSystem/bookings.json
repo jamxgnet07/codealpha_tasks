@@ -1,0 +1,16 @@
+[
+  {
+    "id": "8331e484-eeee-4776-9b26-36c247450eb1",
+    "ticketNumber": "BUS-1785046332148",
+    "name": "jameel",
+    "email": "jameel.offi@gmail.com",
+    "from": "Chennai",
+    "to": "Tambaram",
+    "passengers": 1,
+    "passType": "Monthly Pass",
+    "journeyDate": "2026-07-26",
+    "fare": 225,
+    "bookingTime": "2026-07-26T06:12:12.148Z",
+    "status": "Confirmed"
+  }
+]
